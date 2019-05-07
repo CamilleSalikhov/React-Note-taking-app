@@ -1,0 +1,1 @@
+{"version":3,"sources":["App.css"],"names":[],"mappings":"AAAA,KACE,iBACF,CAEA,MACE,YACF","file":"main.c07152f8.chunk.css","sourcesContent":[".App {\n  text-align: center;\n}\n\n.form {\n  display: flex;\n}\n"]}
