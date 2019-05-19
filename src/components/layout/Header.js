@@ -1,11 +1,11 @@
 import React from 'react'
-
+import {Link} from 'react-router-dom'
 export default function Header() {
   return (
     <header>
       <h1 style ={headerStyle}>Todolist</h1>
-    </header>
-  )
+    <Link to='/'>Home</Link> | <Link to='/about'> About</Link>
+    </header>  )
 }
 const headerStyle = {
   backgroundColor: 'black',

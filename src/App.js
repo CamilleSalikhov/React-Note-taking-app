@@ -1,9 +1,11 @@
 import React from 'react';
 import './App.css';
+import { BrowserRouter, Route } from 'react-router-dom'
 import Todos from './components/Todos';
 import Header from './components/layout/Header';
 import AddTodo from './components/AddTodo';
 import uuid from 'uuid';
+import About from './components/About.js'
 class App extends React.Component {
   state = {
     todos: [
@@ -51,11 +53,17 @@ class App extends React.Component {
   render() {
     
       return (
+        <BrowserRouter>
           <div className='App'>
           <Header />
+          <Route exact path='/' render={props=>(<div>
           <AddTodo addTodo={this.addTodo} />
           <Todos todos={this.state.todos} markComplete = {this.markComplete} deleteTodo ={this.deleteTodo} />
+            </div>)} ></Route>
+            <Route path ='/about' component={About} />
+          
           </div>
+          </BrowserRouter>
       );
   }
 }
