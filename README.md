@@ -1,1 +1,1 @@
-# Todolist in React
+# React note taking app
